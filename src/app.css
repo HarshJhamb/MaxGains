@@ -1,0 +1,439 @@
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+
+  background-color: #000000;
+  font-family: 'Arial Narrow Bold', sans-serif; /* A more modern and readable default font */
+  line-height: 1.6; /* Improve text readability */
+}
+
+/* Navigation bar styles */
+.nav {
+  width: 100%;
+  height: 110px; /* Reduced height for a sleeker look */
+  background-color: #f1f2ec; /* Light gray background */
+  margin-top :1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* More subtle shadow */
+  padding: 0 20px; /* Add horizontal padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ position: absolute;
+ z-index: 2;
+
+}
+
+.logo {
+  width: auto; /* Adjust width based on content */
+  height: 50px; /* Adjust height */
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 80px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Example hover color */
+}
+
+.search-container {
+  flex-grow: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.search-box .material-symbols-outlined {
+  margin-right: 8px;
+  color: #6c757d;
+}
+
+.search-box2 {
+  flex-grow: 1;
+  color: #495057;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Lower navigation bar styles */
+.lowernav {
+ background-image: linear-gradient(#f1f2ec,#f1f2ec,  rgb(0, 0, 0));/* A slightly lighter background */
+  width: 89%;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 10px; /* Increased vertical padding */
+  border-radius: 3px; /* Slightly rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  padding-top: 130px;
+  z-index: 1;
+  position:relative; /* Ensure it stays above other content */
+
+}
+
+.inputss {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0; /* Increased vertical padding within the container */
+}
+
+.a1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fefefe;
+  font-size: 1rem; /* Slightly larger text */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.a1:hover {
+  color: #00ff1e;
+}
+
+.wheyImage1,
+.suplimentImage {
+  width: 70px; /* Increased image size */
+  height: 70px; /* Increased image size */
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  margin-bottom: 8px; /* Increased spacing below image */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  object-fit: cover; /* Ensure images fit within the circle */
+}
+
+.wheyImage1:hover,
+.suplimentImage:hover {
+  transform: scale(1.15); /* Slightly more zoom on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.whey1,
+.RAwwhey,
+.RAwwhey2,
+.RAwwhey3 {
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 0.9rem; /* Slightly larger text */
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Slider styles */
+.slider {
+  width: 100%;
+  height: auto; /* Adjust height based on image aspect ratio */
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-top: 15px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  display: block; /* Prevent extra space below image */
+  object-fit: cover; /* Cover the entire container */
+  aspect-ratio: 16 / 5; /* Example aspect ratio, adjust as needed */
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  pointer-events: none;
+}
+
+.control {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  pointer-events: all;
+  padding: 5px 10px;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.control:hover {
+  opacity: 1;
+}
+
+.material-symbols-outlined {
+  margin-top: 2px;
+  margin-right: 0;
+  font-size: inherit; /* Inherit font size from parent */
+}
+
+/* Shop by level section */
+.ShopBYlevel {
+  height: auto; /* Adjust height based on content */
+  color: peru;
+  font-size: 2rem;
+  background-color: black;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.greem1 {
+  color: white;
+ 
+}
+
+/* Banner below navigation */
+.nav1 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.Navu {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Indicate overflow with an ellipsis */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-links {
+    margin-left: auto;
+  }
+
+  .nav-links a {
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .search-container {
+    margin: 0 10px;
+  }
+
+  .lowernav {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .inputss {
+    justify-content: space-between;
+    padding: 8px; /* Adjust padding for larger items */
+  }
+
+  .a1 {
+    font-size: 0.9rem; /* Slightly larger text on smaller screens */
+  }
+
+  .wheyImage1,
+  .suplimentImage {
+    width: 55px; /* Slightly larger images on smaller screens */
+    height: 55px;
+    margin-bottom: 5px;
+  }
+
+  .whey1,
+  .RAwwhey,
+  .RAwwhey2,
+  .RAwwhey3 {
+    font-size: 0.8rem; /* Slightly larger text on smaller screens */
+  }
+
+  .Navu {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav {
+    padding: 0 10px;
+  }
+
+  .logo img {
+    max-height: 40px;
+  }
+
+  .nav-links a {
+    margin-left: 8px;
+  }
+
+  .search-container {
+    display: none; /* Hide search on very small screens */
+  }
+
+  .lowernav {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+  }
+
+  .inputss {
+    padding: 8px 5px; /* Adjust padding for larger items */
+  }
+
+  .a1 {
+    font-size: 0.8rem; /* Slightly larger text on very small screens */
+  }
+
+  .wheyImage1,
+  .suplimentImage {
+    width: 50px; /* Slightly larger images on very small screens */
+    height: 50px;
+    margin-bottom: 5px;
+  }
+
+  .whey1,
+  .RAwwhey,
+  .RAwwhey2,
+  .RAwwhey3 {
+    font-size: 0.75rem; /* Adjust text size for very small screens */
+  }
+
+  .Navu {
+    font-size: 0.9rem;
+  }
+}
+.cart{
+  display: flex;
+  mix-blend-mode:color-burn;   mask-image: none;
+  height: 25px;
+  left: 10px;
+  width: 40px; /* Position it to the right */
+ filter: contrast(1);
+  cursor: pointer;
+  
+}
+.NAVCARTCOUNT{
+  
+  color:black;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px; 
+  right: -10px; 
+  width: 22px;
+  height: 22px; 
+  color: rgb(0, 0, 0);
+  border-radius: 50%; 
+  font-size: 1rem; 
+}
+.login {
+  cursor: pointer;
+}
+ .product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+}
+
+.product-image {
+  width: 50%;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 30px;
+  flex: 1;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #27ae60;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  padding: 10px 25px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #e74c3c;
+}

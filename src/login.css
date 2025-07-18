@@ -1,0 +1,137 @@
+/* Login Page Styles */
+
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg,  #ebebda ,#000000);
+  font-family: "Poppins", sans-serif;
+}
+
+.loginContainer {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.loginContainer h1 {
+  margin-bottom: 25px;
+  color: #4a4a4a;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.loginSignup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.loginSignup-fields input {
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.loginSignup-fields input:focus {
+  border-color: #6e8efb;
+  box-shadow: 0 0 8px rgba(110, 142, 251, 0.4);
+  outline: none;
+}
+.cb {
+  background: linear-gradient(135deg, #5b5555, #ebeadd);
+ text-decoration: none;
+  border:none;
+  border-radius: 7%;
+  height: 35px;
+  width: 100%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s; 
+  padding: 5px -1px ;
+}
+
+.jaja {
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease, transform 0.2s;
+}
+
+ .jaja :hover {
+  background:none;
+  transform: translateY(-2px);
+  color: #405cdb;
+
+  
+  
+}
+
+
+button:active {
+  transform: scale(0.98);
+}
+
+.loginSignup-login {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.loginSignup-login span {
+  color: #6e8efb;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.loginSignup-login span:hover {
+  text-decoration: underline;
+}
+
+.agree {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.agree input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #6e8efb;
+  margin-bottom: 24px;
+  margin-right: -7px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.cb {
+  background: linear-gradient(135deg, #000000, #ebeadd);
+  color: whitesmoke;
+  border:none;
+border-radius: 7%;
+height: 35px;
+  width: 100%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s; 
+  padding: 5px -1px ;
+}
